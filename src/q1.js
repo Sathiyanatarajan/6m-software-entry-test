@@ -13,8 +13,18 @@
 
 function swap(x, y){
     // Task 1: Add code here
+    if (isNaN(x) || isNAN(y))
+        return -1;
 }
+//swap the values
+x = x + y;
+y = x - y;
+x = x - y;
+console.log("Swapped values: x = ", x, "y = ", y);
+
 
 // Task 2: Add code here
+swap("Apple",10);
+swap(9, 17);
 
 module.exports = swap;
